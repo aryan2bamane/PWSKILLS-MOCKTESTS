@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Form with Basic Validation</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header></header>
+  <!-- Main -->
+  <main>
+    <section class="box">
+      <form onsubmit="return validateForm()">
+        <div class="credentials">
+          <h1>Your Information</h1>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required><br>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required><br>
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required><br>
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required><br>
+
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" required><br>
+
+          <label for="gender">Gender:</label>
+          <select id="gender" name="gender" required>
+            <option value="">Select</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select><br>
+
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date" required><br>
+
+          <label for="color">Favorite Color:</label>
+          <input type="color" id="color" name="color" required><br>
+
+          <input type="submit" value="Submit" id="submitBtn">
+
+        </div>
+
+      </form>
+    </section>
+  </main>
+  <!-- footer -->
+  <footer></footer>
+
+</body>
+
+</html>

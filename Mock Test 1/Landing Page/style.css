@@ -1,0 +1,142 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.offer {
+    height: 40px;
+    background-color: #241c15;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.offer span {
+    border-bottom: dashed white 2px;
+}
+
+nav {
+    height: 110px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 45px;
+}
+
+.navItems ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.navItems ul li {
+    margin: 0px 15px;
+    font-size: 20px;
+}
+
+.logIn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logIn span,
+.search {
+    margin: 0px 5px;
+}
+
+input {
+    border: none;
+}
+
+.search {
+    padding: 4px;
+    border: #4a4542 1px solid;
+    border-radius: 25px;
+    height: 30px;
+}
+
+#loginBtn {
+    height: 50px;
+    width: 90px;
+    margin: 0px 10px;
+    border-radius: 25px;
+    border: solid 1px #4a4542;
+    background-color: #fff;
+}
+
+#signupBtn,
+#startBtn {
+    height: 50px;
+    width: 120px;
+    margin: 0px 10px;
+    border-radius: 25px;
+    border: solid 1px black;
+    background-color: #FFE01B;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    height: 76vh;
+    justify-content: space-between;
+}
+
+
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    /* width: 500px; */
+}
+
+.intro {
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+    /* align-items: start; */
+    justify-content: center;
+    width: 600px;
+    margin-left: 300px;
+}
+
+.Right {
+    width: 50%;
+    background-image: url('./714I2a44cwL._AC_SX466_.jpg');
+    background-size: cover;
+}
+
+footer {
+    background-color: #241c15;
+    color: white;
+    padding: 20px 0px;
+    position: fixed;
+    bottom: 0px;
+}
+
+.base {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.base div {
+    width: 40%;
+    display: flex;
+    justify-content: end;
+}
+
+#cookies {
+    border: 2px solid white;
+    margin: 0px 15px;
+    height: 25px;
+    width: 120px;
+    background-color: #a4a2a2;
+    /* padding: 10px; */
+}

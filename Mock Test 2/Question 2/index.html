@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Todo App</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        li {
+            display: flex;
+            align-items: center;
+            margin: 15px 0px;
+            padding: 5px 10px;
+            list-style: none;
+            height: 30px;
+            font-size: 1.2rem;
+            border-radius: 15px;
+            background-color: #fff;
+            color: black;
+        }
+
+        body {
+            background-color: #005874;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header {
+            height: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #FFBE00;
+        }
+
+        main {
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        #app {
+            width: 1000px;
+            padding: 15px;
+            margin: 15px 0px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: start; */
+            align-items: start;
+            /* height: 100vh; */
+        }
+
+        .addTask {
+            background-color: #fff;
+            margin: 15px 0px;
+            padding: 20px;
+            width: 950px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 20px;
+            background-color: #1C819E;
+        }
+
+        input {
+            width: 700px;
+            height: 20px;
+            padding: 15px;
+            color: black;
+            border: none;
+            border-radius: 15px;
+        }
+
+        button {
+            border-radius: 15px;
+            background-color: #FFBE00;
+            border: none;
+            color: black;
+            margin: 10px;
+            padding: 15px;
+            width: 150px;
+        }
+
+        .taskList {
+            background-color: #E6E6D4;
+            margin: 15px 0px;
+            padding: 20px;
+            height: auto;
+            width: 50vw;
+            border-radius: 50px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <header>
+        <h1>Todo App</h1>
+    </header>
+
+    <!-- main -->
+    <main>
+        <div id="app">
+            <!-- Intro -->
+            <div class="intro">
+                <h2>Welcome to TO DO Web Application!</h2>
+            </div>
+            <!-- Elements which Handle the Input -->
+            <div class="addTask">
+                <input type="text" id="taskIn" placeholder="Add A New Task">
+                <button id="addItem">Add The Task</button>
+            </div>
+            <!-- All Tasks -->
+
+        </div>
+        <div class="taskList">
+            <ul id="list"> </ul>
+        </div>
+    </main>
+
+    <script>
+        const list = [];
+
+        function addItem() {
+            if (document.getElementById("taskIn").value.length != 0) {
+                const newTask = document.getElementById("taskIn").value;
+                list.push(newTask);
+
+                const li = document.createElement("li");
+                li.textContent = newTask;
+                document.getElementById("list").appendChild(li);
+                // document.getElementById("list").appendChild(button);
+                document.getElementById("taskIn").value = "";
+            }
+            else {
+                alert("Please Enter A Task To Add");
+            }
+
+        }
+
+        document.getElementById("addItem").addEventListener("click", addItem);
+
+    </script>
+</body>
+
+</html>

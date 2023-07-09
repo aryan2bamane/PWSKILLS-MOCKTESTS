@@ -1,0 +1,45 @@
+<!-- 1. DOM Manipulation: Create a page with a square box of size 300x300 on the page which will be red initially, upon clicking the red box it should change the color to yellow and the size should be doubled -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Implementing DOM</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .box1 {
+            background-color: red;
+            height: 300px;
+            width: 300px;
+        }
+
+        .scaled {
+            scale: 2;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<script type="module">
+
+    const box = document.getElementById("box");
+
+    box.addEventListener("click", () => {
+        box.classList.add("scaled");
+        // box.classList.remove("box1");
+    })
+
+</script>
+
+<body>
+    <div id="box" class="box1">
+    </div>
+</body>
+
+</html>
