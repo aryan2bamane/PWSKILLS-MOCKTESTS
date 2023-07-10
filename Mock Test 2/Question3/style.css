@@ -1,0 +1,28 @@
+.skeleton {
+    background-color: #f3f3f3;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.skeleton-line {
+    background-color: #e8e8e8;
+    height: 12px;
+    margin-bottom: 10px;
+    width: 70%;
+}
+
+.user-card {
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.user-card h3 {
+    margin-top: 0;
+}
+
+.user-card p {
+    margin-bottom: 10px;
+}
